@@ -1,0 +1,150 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{C309513C-F943-435D-A6A9-E2F4CB9BA70F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJ1012.Core", "Common\KJ1012.Core\KJ1012.Core.csproj", "{CFB5296D-4ADB-4457-92B6-D4760C4E35EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJ1012.Data", "Common\KJ1012.Data\KJ1012.Data.csproj", "{1D6CF562-6C71-4013-BDE5-BBD8A2AEBB78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJ1012.Domain", "Common\KJ1012.Domain\KJ1012.Domain.csproj", "{1B16E458-2EAA-4731-8F99-1B11A122D203}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJ1012.Services", "Common\KJ1012.Services\KJ1012.Services.csproj", "{DA031819-752B-4D9C-904F-20D5F4AACE28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJ1012.Job", "Common\KJ1012.Job\KJ1012.Job.csproj", "{52FA899C-FAEB-4FF4-9ADA-0650E3FEFAAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CollectionCenter", "CollectionCenter", "{3DD889F3-17D9-4300-A977-B8962B948524}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJ1012.CollectionCenter", "CollectionCenter\KJ1012.CollectionCenter\KJ1012.CollectionCenter.csproj", "{4FFF9117-7B9C-48CB-A44B-5C9997ED58C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJ1012.CollectionCenter.SocketService", "CollectionCenter\KJ1012.CollectionCenter.SocketServer\KJ1012.CollectionCenter.SocketService.csproj", "{077A8CBF-74DF-4E18-BA44-2D446497CA04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJ1012.CollectionCenter.Framework", "CollectionCenter\KJ1012.CollectionCenter.Framework\KJ1012.CollectionCenter.Framework.csproj", "{616855A1-A8FB-4EB0-B808-BCEFCFD54190}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJ1012.CollectionCenter.Protocol", "CollectionCenter\KJ1012.CollectionCenter.Protocol\KJ1012.CollectionCenter.Protocol.csproj", "{1ED6AB92-94D1-444D-A6F7-0D6786E131A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJ1012.CollectionCenter.SocketSend", "CollectionCenter\KJ1012.CollectionCenter.SocketSend\KJ1012.CollectionCenter.SocketSend.csproj", "{E94B24F3-E5FC-45E1-93E8-DEB2EC47A88E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJ1012.CollectionCenter.MqttClient", "CollectionCenter\KJ1012.CollectionCenter.MqttClient\KJ1012.CollectionCenter.MqttClient.csproj", "{4D310C9B-B57C-49BA-8979-B599D780F52B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFB5296D-4ADB-4457-92B6-D4760C4E35EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB5296D-4ADB-4457-92B6-D4760C4E35EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB5296D-4ADB-4457-92B6-D4760C4E35EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB5296D-4ADB-4457-92B6-D4760C4E35EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D6CF562-6C71-4013-BDE5-BBD8A2AEBB78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D6CF562-6C71-4013-BDE5-BBD8A2AEBB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D6CF562-6C71-4013-BDE5-BBD8A2AEBB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D6CF562-6C71-4013-BDE5-BBD8A2AEBB78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B16E458-2EAA-4731-8F99-1B11A122D203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B16E458-2EAA-4731-8F99-1B11A122D203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B16E458-2EAA-4731-8F99-1B11A122D203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B16E458-2EAA-4731-8F99-1B11A122D203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA031819-752B-4D9C-904F-20D5F4AACE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA031819-752B-4D9C-904F-20D5F4AACE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA031819-752B-4D9C-904F-20D5F4AACE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA031819-752B-4D9C-904F-20D5F4AACE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52FA899C-FAEB-4FF4-9ADA-0650E3FEFAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FA899C-FAEB-4FF4-9ADA-0650E3FEFAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FA899C-FAEB-4FF4-9ADA-0650E3FEFAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FA899C-FAEB-4FF4-9ADA-0650E3FEFAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FFF9117-7B9C-48CB-A44B-5C9997ED58C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FFF9117-7B9C-48CB-A44B-5C9997ED58C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FFF9117-7B9C-48CB-A44B-5C9997ED58C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FFF9117-7B9C-48CB-A44B-5C9997ED58C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077A8CBF-74DF-4E18-BA44-2D446497CA04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077A8CBF-74DF-4E18-BA44-2D446497CA04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077A8CBF-74DF-4E18-BA44-2D446497CA04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077A8CBF-74DF-4E18-BA44-2D446497CA04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616855A1-A8FB-4EB0-B808-BCEFCFD54190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616855A1-A8FB-4EB0-B808-BCEFCFD54190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616855A1-A8FB-4EB0-B808-BCEFCFD54190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616855A1-A8FB-4EB0-B808-BCEFCFD54190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ED6AB92-94D1-444D-A6F7-0D6786E131A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED6AB92-94D1-444D-A6F7-0D6786E131A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED6AB92-94D1-444D-A6F7-0D6786E131A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED6AB92-94D1-444D-A6F7-0D6786E131A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E94B24F3-E5FC-45E1-93E8-DEB2EC47A88E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E94B24F3-E5FC-45E1-93E8-DEB2EC47A88E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E94B24F3-E5FC-45E1-93E8-DEB2EC47A88E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E94B24F3-E5FC-45E1-93E8-DEB2EC47A88E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D310C9B-B57C-49BA-8979-B599D780F52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D310C9B-B57C-49BA-8979-B599D780F52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D310C9B-B57C-49BA-8979-B599D780F52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D310C9B-B57C-49BA-8979-B599D780F52B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CFB5296D-4ADB-4457-92B6-D4760C4E35EA} = {C309513C-F943-435D-A6A9-E2F4CB9BA70F}
+		{1D6CF562-6C71-4013-BDE5-BBD8A2AEBB78} = {C309513C-F943-435D-A6A9-E2F4CB9BA70F}
+		{1B16E458-2EAA-4731-8F99-1B11A122D203} = {C309513C-F943-435D-A6A9-E2F4CB9BA70F}
+		{DA031819-752B-4D9C-904F-20D5F4AACE28} = {C309513C-F943-435D-A6A9-E2F4CB9BA70F}
+		{52FA899C-FAEB-4FF4-9ADA-0650E3FEFAAA} = {C309513C-F943-435D-A6A9-E2F4CB9BA70F}
+		{4FFF9117-7B9C-48CB-A44B-5C9997ED58C2} = {3DD889F3-17D9-4300-A977-B8962B948524}
+		{077A8CBF-74DF-4E18-BA44-2D446497CA04} = {3DD889F3-17D9-4300-A977-B8962B948524}
+		{616855A1-A8FB-4EB0-B808-BCEFCFD54190} = {3DD889F3-17D9-4300-A977-B8962B948524}
+		{1ED6AB92-94D1-444D-A6F7-0D6786E131A1} = {3DD889F3-17D9-4300-A977-B8962B948524}
+		{E94B24F3-E5FC-45E1-93E8-DEB2EC47A88E} = {3DD889F3-17D9-4300-A977-B8962B948524}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21D72CEE-3845-42AD-B036-319D3AC133CA}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.2.43:8800/tfs/zzxl
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CollectionCenter\\KJ1012.CollectionCenter.Framework\\KJ1012.CollectionCenter.Framework.csproj
+		SccProjectTopLevelParentUniqueName1 = KJ1012.sln
+		SccProjectName1 = CollectionCenter/KJ1012.CollectionCenter.Framework
+		SccLocalPath1 = CollectionCenter\\KJ1012.CollectionCenter.Framework
+		SccProjectUniqueName2 = CollectionCenter\\KJ1012.CollectionCenter.Protocol\\KJ1012.CollectionCenter.Protocol.csproj
+		SccProjectTopLevelParentUniqueName2 = KJ1012.sln
+		SccProjectName2 = CollectionCenter/KJ1012.CollectionCenter.Protocol
+		SccLocalPath2 = CollectionCenter\\KJ1012.CollectionCenter.Protocol
+		SccProjectUniqueName3 = CollectionCenter\\KJ1012.CollectionCenter.SocketSend\\KJ1012.CollectionCenter.SocketSend.csproj
+		SccProjectTopLevelParentUniqueName3 = KJ1012.sln
+		SccProjectName3 = CollectionCenter/KJ1012.CollectionCenter.SocketSend
+		SccLocalPath3 = CollectionCenter\\KJ1012.CollectionCenter.SocketSend
+		SccProjectUniqueName4 = CollectionCenter\\KJ1012.CollectionCenter.SocketServer\\KJ1012.CollectionCenter.SocketService.csproj
+		SccProjectTopLevelParentUniqueName4 = KJ1012.sln
+		SccProjectName4 = CollectionCenter/KJ1012.CollectionCenter.SocketServer
+		SccLocalPath4 = CollectionCenter\\KJ1012.CollectionCenter.SocketServer
+		SccProjectUniqueName5 = CollectionCenter\\KJ1012.CollectionCenter\\KJ1012.CollectionCenter.csproj
+		SccProjectTopLevelParentUniqueName5 = KJ1012.sln
+		SccProjectName5 = CollectionCenter/KJ1012.CollectionCenter
+		SccLocalPath5 = CollectionCenter\\KJ1012.CollectionCenter
+		SccProjectUniqueName6 = Common\\KJ1012.Core\\KJ1012.Core.csproj
+		SccProjectTopLevelParentUniqueName6 = KJ1012.sln
+		SccProjectName6 = Common/KJ1012.Core
+		SccLocalPath6 = Common\\KJ1012.Core
+		SccProjectUniqueName7 = Common\\KJ1012.Data\\KJ1012.Data.csproj
+		SccProjectTopLevelParentUniqueName7 = KJ1012.sln
+		SccProjectName7 = Common/KJ1012.Data
+		SccLocalPath7 = Common\\KJ1012.Data
+		SccProjectUniqueName8 = Common\\KJ1012.Domain\\KJ1012.Domain.csproj
+		SccProjectTopLevelParentUniqueName8 = KJ1012.sln
+		SccProjectName8 = Common/KJ1012.Domain
+		SccLocalPath8 = Common\\KJ1012.Domain
+		SccProjectUniqueName9 = Common\\KJ1012.Job\\KJ1012.Job.csproj
+		SccProjectTopLevelParentUniqueName9 = KJ1012.sln
+		SccProjectName9 = Common/KJ1012.Job
+		SccLocalPath9 = Common\\KJ1012.Job
+		SccProjectUniqueName10 = Common\\KJ1012.Services\\KJ1012.Services.csproj
+		SccProjectTopLevelParentUniqueName10 = KJ1012.sln
+		SccProjectName10 = Common/KJ1012.Services
+		SccLocalPath10 = Common\\KJ1012.Services
+		SccProjectUniqueName11 = CollectionCenter\\KJ1012.CollectionCenter.MqttClient\\KJ1012.CollectionCenter.MqttClient.csproj
+		SccProjectName11 = CollectionCenter/KJ1012.CollectionCenter.MqttClient
+		SccLocalPath11 = CollectionCenter\\KJ1012.CollectionCenter.MqttClient
+	EndGlobalSection
+EndGlobal

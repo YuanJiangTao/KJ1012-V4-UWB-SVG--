@@ -1,0 +1,78 @@
+﻿Scaffold-DbContext "Data Source=localhost;Initial Catalog=KJ1012_V4_UWB;Integrated Security=False;Persist Security Info=True;User ID=sa;Password=wellsoft&123" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
+
+在命令提示符中首先输入dotnet ef migrations add MyFirstMigration，然后再输入dotnet ef database update。
+
+dotnet electronize build /target win
+
+01 00 FF 31 01 00 01 FE B1 FE B2 02 8A 02 BC 0F 1E 34
+
+
+        static void Main(string[] args)
+        {
+            StringBuilder sb = new StringBuilder();
+            var list = new List<string>();
+            for (DateTime i = DateTime.Now; i < DateTime.Now.AddYears(10); i = i.AddDays(1))
+            {
+                list.Add($"N'{i.Year}-{i.Month:00}-{i.Day:00}T00:00:00.000'");
+            }
+
+            sb.AppendJoin(",", list);
+            var ss = sb.ToString();
+            Console.WriteLine("Hello World!");
+        }
+        static void Main1(string[] args)
+        {
+            StringBuilder sb = new StringBuilder();
+            var list = new List<string>();
+            for (DateTime i = DateTime.Now; i < DateTime.Now.AddYears(10); i = i.AddDays(1))
+            {
+                list.Add("[POSITION]");
+            }
+
+            sb.AppendJoin(",", list);
+            var ss = sb.ToString();
+            Console.WriteLine("Hello World!");
+        }
+
+truncate table [dbo].[Ad_Attendance]
+truncate table [dbo].[Ad_ClassInstitution]
+truncate table [dbo].[Ad_DaySummary]
+truncate table [dbo].[Ad_Screen]
+truncate table [dbo].[Ad_WaitAttendance]
+delete [dbo].[Base_Area]
+truncate table [dbo].[Base_AreaDevice]
+delete from  [dbo].[Base_Device]
+truncate table [dbo].[Base_Member]
+delete [dbo].[Base_Organization]
+truncate table [dbo].[Call_Answer]
+delete [dbo].[Call_UpCall]
+DBCC CHECKIDENT (Call_UpCall,reseed,0) 
+truncate table [dbo].[Pos_AreaInOut]
+truncate table Pos_DeviceInOut
+truncate table Sys_AccountLogin
+truncate table [dbo].[Pos_DownMember]
+truncate table [dbo].[Pos_DownSummary]
+truncate table [dbo].[Pos_Position]
+truncate table [dbo].[Sys_Authorize]
+truncate table [dbo].[Sys_PeriodDate]
+truncate table [dbo].[Sys_Role]
+truncate table [dbo].[Warn_AreaOver]
+truncate table [dbo].[Warn_Device]
+truncate table [dbo].[Warn_OverTime]
+truncate table [dbo].[Warn_Terminal]
+truncate table [dbo].[Loc_Attendance]
+truncate table [dbo].[Loc_Down]
+truncate table [dbo].[Loc_Manage]
+truncate table [dbo].[Loc_Position]
+truncate table [dbo].[Loc_WarnTerminal]
+truncate table [dbo].[Sys_PeriodDate]
+truncate table Pos_DeviceInOut
+truncate table Pos_PositionCount
+truncate table Rep_DeviceStateDetail
+truncate table Veh_Position
+truncate table Veh_RealTime
+delete [dbo].[Sys_AccountPassword] where AccountId not in('55FA5539-491A-4A7D-A036-055B50A2FFC7','B4C0E896-5AD2-4D86-987D-7A2FA697D6D5')
+delete [dbo].[Sys_Account] where Id not in('55FA5539-491A-4A7D-A036-055B50A2FFC7','B4C0E896-5AD2-4D86-987D-7A2FA697D6D5')
+
+select *,DATEDIFF("ss", PositionTime,LEAD (positiontime) over(order by TerminalId,PositionTime)) from Pos_Position where PositionTime>'2019-04-01 19:09:49'
+order by DATEDIFF("ss", PositionTime,LEAD (positiontime) over(order by TerminalId,PositionTime))

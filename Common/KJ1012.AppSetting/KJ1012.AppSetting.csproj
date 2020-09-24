@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KJ1012.Core\KJ1012.Core.csproj" />
+    <ProjectReference Include="..\KJ1012.Data\KJ1012.Data.csproj" />
+    <ProjectReference Include="..\KJ1012.Domain\KJ1012.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
